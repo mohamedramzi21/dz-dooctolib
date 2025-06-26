@@ -6,7 +6,7 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-    public class Patient extends utilisateur {
+    public class PatientEntity extends UtilisateurEntity {
         private String ville;
         private String telephone;
     }

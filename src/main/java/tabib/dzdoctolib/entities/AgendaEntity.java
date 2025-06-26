@@ -10,7 +10,7 @@ import java.time.LocalTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Agenda {
+public class AgendaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,5 +20,5 @@ public class Agenda {
     private int dureeCreneau;
 
     @ManyToOne
-    private Medecin medecin;
+    private MedecinEntity medecin;
 }

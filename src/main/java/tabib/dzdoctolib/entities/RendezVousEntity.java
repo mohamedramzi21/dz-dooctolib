@@ -8,16 +8,16 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RendezVous {
+public class RendezVousEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    private Patient patient;
+    private PatientEntity patient;
 
     @ManyToOne
-    private Medecin medecin;
+    private MedecinEntity medecin;
     private String date;
     private String heure;
     private String statut;

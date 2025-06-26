@@ -1,5 +1,14 @@
+/*
 package tabib.dzdoctolib.repositories;
-import tabib.dzdoctolib.entities.RendezVous;
+import jakarta.persistence.metamodel.SingularAttribute;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+import tabib.dzdoctolib.entities.RendezVousEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
-public interface RendezVousRepository extends JpaRepository<RendezVous,Long> {
+
+import java.io.Serializable;
+import java.lang.ScopedValue;
+
+public interface RendezVousRepository extends JpaRepository<RendezVousEntity,Long> {
+    ScopedValue<Object> findById(SingularAttribute<AbstractPersistable, Serializable> id);
 }
+*/
